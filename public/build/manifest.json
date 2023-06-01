@@ -1,0 +1,32 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-0067b4bf.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/areset.css": {
+    "file": "assets/areset-d9255dd1.css",
+    "isEntry": true,
+    "src": "resources/css/areset.css"
+  },
+  "resources/css/custom.css": {
+    "file": "assets/custom-b764a28c.css",
+    "isEntry": true,
+    "src": "resources/css/custom.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-f3786028.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/custom.js": {
+    "file": "assets/custom-e3ae3a2c.js",
+    "isEntry": true,
+    "src": "resources/js/custom.js"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-eec9e40b.css",
+    "isEntry": true,
+    "src": "resources/sass/app.scss"
+  }
+}
