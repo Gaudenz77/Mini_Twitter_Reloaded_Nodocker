@@ -11,7 +11,7 @@
 @if (Route::has('login'))
     <div class="col-sm-2">
         @auth
-            <p style="line-height: 50px">Logged in as: <b>{{ Auth::user()->name}}</b> </p>
+            <p style="line-height: 50px">Welcome <b>{{ Auth::user()->name}}</b> </p>
             <a href="{{ url('/dashboard') }}">Dashboard</a>
             <form class="text-center" action="{{ route('logout') }}" method="POST" class="inline">
                 @csrf<br>
