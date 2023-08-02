@@ -1,3 +1,51 @@
+<nav class="navbarOwn navbar navbar-expand-lg {{-- navbar-light --}} {{-- bg-light --}}">{{--  --}}
+    <div class="container">
+        <a class="navbar-brand brandOwn" href="/messages">
+            <i class="fa-brands fa-twitter fa-spin titlelogo" style="--fa-animation-iteration-count: 1;"></i>
+            @yield('title')
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item mt-1 pt-3 px-2">
+                    <button class="btn btn-outline-secondary" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+                </li>
+                @auth
+                    <li class="nav-link mb-0 mt-1 pt-3">
+                        <p class="nav-link" style="">Welcome <b>{{ Auth::user()->name }}</b></p>
+                    </li>
+                    <li class="nav-item mt-1 pt-3 px-2" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <a class="btn btn-primary" href="{{ url('/dashboard') }}">Dashboard</a>
+                    </li>
+                    <li class="nav-item px-2" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <form action="{{ route('logout') }}" method="POST" class="inline">
+                            @csrf
+                            <button type="submit" class="btn btn-circlesmall mt-3"><i
+                                    class="fa-solid fa-right-from-bracket fa-2x fa-flip"
+                                    style="--fa-animation-iteration-count: 1;"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item px-2" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <x-button-test />
+                    </li>
+                @else
+                    <li class="nav-item px-2" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <a href="{{ route('login') }}" class="nav-link">Log in</a>
+                    </li>
+                    @if (Route::has('register'))
+                        <li class="nav-item px-2" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <a href="{{ route('register') }}" class="nav-link">Register</a>
+                        </li>
+                    @endif
+                @endauth
+            </ul>
+        </div>
+    </div>
+</nav>
+
 {{-- <nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
