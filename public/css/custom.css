@@ -178,4 +178,16 @@ body.dark-mode .btn-outline-secondary {
  
   }
 
+.brandOwn {
+    background-color:#edeeee !important;
+}
 
+body.dark-mode .brandOwn {
+    background-color:#2f2f2f !important;
+}
+
+
+
+.navbar-brand {
+    color: #ff0000; /* Replace #ff0000 with your desired color code */
+}

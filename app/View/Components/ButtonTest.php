@@ -22,11 +22,11 @@ class ButtonTest extends Component
 
         public function render()
     {
-        return <<<'blade'
+        /* return <<<'blade'
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
                 <button type="submit" class="btn btn-danger">Logout</button>
             </form>
-        blade;
+        blade; */
     }
 }
