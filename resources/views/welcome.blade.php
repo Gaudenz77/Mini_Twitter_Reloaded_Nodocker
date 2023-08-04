@@ -18,6 +18,10 @@
         <title>Laravel</title>
     </head> --}}
 <body class="antialiased">
+    {{-- <header>
+        @include('layouts.navigation')
+    </header> --}}
+
 <main>
     <div class="container">
         <div class="row text-center my-3">
