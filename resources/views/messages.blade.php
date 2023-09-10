@@ -34,7 +34,7 @@
                 <!-- Blog Post Form -->
                 <div class="col-md-4">
                     @if (Auth::check())
-                        <h2 style="line-height: 50px">Create new message: </h2>
+                        <h2 style="line-height: 50px">Create newer message: </h2>
                         <form action="/create" method="post">
                             <div class="form-group mb-3">
                                 <input type="text" class="form-control" name="title" value="{{-- {{$message->title}} --}}"
