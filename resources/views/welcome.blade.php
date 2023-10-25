@@ -27,7 +27,7 @@
         <div class="row text-center my-3">
                 <div class="col-sm-12 mb-3 bg-info">   
                         <h1><i class="fa-brands fa-twitter fa-spin" style="--fa-animation-iteration-count: 1;"></i>
-                        <a href="/messages">Mini Twitter Reloaded with LARAVEL Breeze</a></h1>
+                        <a href="/messages">Mini Twitter Reloaded with LARAVEL Breeze yes</a></h1>
                         
                 </div>
                 <div class="col-sm-12 mb-3 bg-info">
